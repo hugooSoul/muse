@@ -1,6 +1,6 @@
 = simple_form_for @post do |f|
 	= f.input :image
-	= f.input :title
-	= f.input :link
-	= f.input :description
+	= f.input :title, label: false, placeholder: "Title"
+	= f.input :link, label: false, placeholder: "Link here..."
+	= f.text_area :description, label: false, placeholder: "Description"
 	= f.button :submit
